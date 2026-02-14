@@ -34,13 +34,13 @@ function onSelect() {
     // 阿里云盘扫码登录v2不需要客户端ID、应用机密和回调地址 ================
     if (driver_txt_input.value === "alicloud_cs"
         || driver_txt_input.value === "alicloud_tv"
+        || driver_txt_input.value === "115cloud_qr"
     ) {
         // 隐藏整个字段容器
         clientIdContainer.style.display = 'none';
         appSecretContainer.style.display = 'none';
         serverUseContainer.style.display = 'none';
         callbackContainer.style.display = 'none';
-        server_use_input.checked = true;
     } else {
         clientIdContainer.style.display = 'block';
         appSecretContainer.style.display = 'block';
